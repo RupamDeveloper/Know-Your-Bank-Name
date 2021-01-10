@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="ifsc.js"></script>
+        <style>
+           
+            .box{
+                margin-top: 200px;
+                margin-left: 260px;
+                width: 50%;
+                height: 50%;
+                border: black 2px solid;  
+                background-color: rgb(123, 233, 233);            
+            }
+            .all{
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body class="all">
+        <div class="container">
+            <div class="box">
+                <div class="form-group">
+                    <br/>
+                   <center><label>Put your IFSC code here :</label>
+                    <br/>
+                    <br/>
+                    <input type="text" class="form-control" id="ifsc" placeholder="IFSC code"/>
+                    <br/>
+                    <br/>
+                    <button class="btn btn-danger" onclick="findifsc()">Find</button></center>
+                    <p>Name of the BANK : <b><span id="display1"></span></b></p>
+                    <br/>
+                    <p>Location of bank :<b><span id="display2"></span></b></p>
+                    <p>Adress of bank :<b><span id="display3"></span></b></p>
+                    <p>District where bank located:<b><span id="display4"></span></b></p>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>
